@@ -1,0 +1,12 @@
+C:\Users\shariqparwez>groovysh
+Groovy Shell (3.0.4, JVM: 12.0.1)
+Type ':help' or ':h' for help.
+-----------------------------------------------------------------------------------------------------------------------
+groovy:000> 3+5
+===> 8
+groovy:000> println "Welcome to Groovy"
+Welcome to Groovy
+===> null
+groovy:000> println "Welcome to " + "Groovy".toUpperCase()
+Welcome to GROOVY
+===> null

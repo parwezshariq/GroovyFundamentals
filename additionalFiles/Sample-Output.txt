@@ -1,0 +1,79 @@
+C:\Users\shariqparwez\Groovy>dir
+ Volume in drive C is Windows
+ Volume Serial Number is DE5D-E9CA
+
+ Directory of C:\Users\shariqparwez\Groovy
+
+04-07-2020  15:11    <DIR>          .
+04-07-2020  15:11    <DIR>          ..
+04-07-2020  15:10               404 GroovyShell-Basic
+04-07-2020  15:11                28 Sample.groovy
+               2 File(s)            432 bytes
+               2 Dir(s)  57,014,972,416 bytes free
+
+C:\Users\shariqparwez\Groovy>groovyc Sample.groovy
+
+C:\Users\shariqparwez\Groovy>dir
+ Volume in drive C is Windows
+ Volume Serial Number is DE5D-E9CA
+
+ Directory of C:\Users\shariqparwez\Groovy
+
+04-07-2020  15:12    <DIR>          .
+04-07-2020  15:12    <DIR>          ..
+04-07-2020  15:10               404 GroovyShell-Basic
+04-07-2020  15:12             2,322 Sample.class
+04-07-2020  15:11                28 Sample.groovy
+               3 File(s)          2,754 bytes
+               2 Dir(s)  57,014,509,568 bytes free
+			   
+C:\Users\shariqparwez\Groovy>javap Sample.class
+Compiled from "Sample.groovy"
+public class Sample extends groovy.lang.Script {
+  public static transient boolean __$stMC;
+  public Sample();
+  public Sample(groovy.lang.Binding);
+  public static void main(java.lang.String...);
+  public java.lang.Object run();
+  protected groovy.lang.MetaClass $getStaticMetaClass();
+}
+
+C:\Users\shariqparwez\Groovy>groovy Sample
+Welcome to Groovy!
+
+C:\Users\shariqparwez\Groovy>dir
+ Volume in drive C is Windows
+ Volume Serial Number is DE5D-E9CA
+
+ Directory of C:\Users\shariqparwez\Groovy
+
+04-07-2020  15:14    <DIR>          .
+04-07-2020  15:14    <DIR>          ..
+04-07-2020  15:10               404 GroovyShell-Basic
+04-07-2020  15:14               970 Sample-Output.txt
+04-07-2020  15:12             2,322 Sample.class
+04-07-2020  15:11                28 Sample.groovy
+               4 File(s)          3,724 bytes
+               2 Dir(s)  57,013,862,400 bytes free
+
+C:\Users\shariqparwez\Groovy>del Sample.class
+
+C:\Users\shariqparwez\Groovy>dir
+ Volume in drive C is Windows
+ Volume Serial Number is DE5D-E9CA
+
+ Directory of C:\Users\shariqparwez\Groovy
+
+04-07-2020  15:18    <DIR>          .
+04-07-2020  15:18    <DIR>          ..
+04-07-2020  15:10               404 GroovyShell-Basic
+04-07-2020  15:14               970 Sample-Output.txt
+04-07-2020  15:11                28 Sample.groovy
+               3 File(s)          1,402 bytes
+               2 Dir(s)  57,013,600,256 bytes free
+			   
+================================================================================
+			   
+C:\Users\shariqparwez\Groovy>groovy Sample.groovy
+Welcome to Groovy!
+Today's date is Sat Jul 04 15:19:29 IST 2020
