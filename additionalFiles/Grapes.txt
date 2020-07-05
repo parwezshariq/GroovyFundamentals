@@ -1,0 +1,62 @@
+C:\Users\shariqparwez\.groovy\grapes>dir
+ Volume in drive C is Windows
+ Volume Serial Number is DE5D-E9CA
+
+ Directory of C:\Users\shariqparwez\.groovy\grapes
+
+05-07-2020  10:42    <DIR>          .
+05-07-2020  10:42    <DIR>          ..
+05-07-2020  10:41    <DIR>          joda-time
+               0 File(s)              0 bytes
+               3 Dir(s)  57,212,211,200 bytes free
+
+============================================================
+
+C:\Users\shariqparwez>grape list
+
+joda-time joda-time  [2.5]
+
+1 Grape modules cached
+1 Grape module versions cached
+
+============================================================
+
+C:\Users\shariqparwez>grape install xmlwriter xmlwriter 2.2.2
+:: resolving dependencies :: caller#all-caller;working91
+        confs: [default]
+        found xmlwriter#xmlwriter;2.2.2 in jcenter
+        found xmlenc#xmlenc;0.52 in jcenter
+        found msv#isorelax;20030807 in jcenter
+        found junit#junit;3.8.1 in localm2
+downloading https://jcenter.bintray.com/xmlwriter/xmlwriter/2.2.2/xmlwriter-2.2.2.jar ...
+        [SUCCESSFUL ] xmlwriter#xmlwriter;2.2.2!xmlwriter.jar (3525ms)
+downloading https://jcenter.bintray.com/xmlenc/xmlenc/0.52/xmlenc-0.52.jar ...
+        [SUCCESSFUL ] xmlenc#xmlenc;0.52!xmlenc.jar (1275ms)
+downloading https://jcenter.bintray.com/msv/isorelax/20030807/isorelax-20030807.jar ...
+        [SUCCESSFUL ] msv#isorelax;20030807!isorelax.jar (2007ms)
+downloading file:/C:/Users/shariqparwez//.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar ...
+        [SUCCESSFUL ] junit#junit;3.8.1!junit.jar (11ms)
+
+=============================================================
+
+C:\Users\shariqparwez>grape list
+
+joda-time joda-time  [2.5]
+junit junit  [3.8.1]
+msv isorelax  [20030807]
+xmlenc xmlenc  [0.52]
+xmlwriter xmlwriter  [2.2.2]
+
+5 Grape modules cached
+5 Grape module versions cached
+
+==============================================================
+
+C:\Users\shariqparwez>grape resolve xmlwriter xmlwriter 2.2.2
+C:\Users\shariqparwez\.groovy\grapes\xmlwriter\xmlwriter\jars\xmlwriter-2.2.2.jar
+C:\Users\shariqparwez\.groovy\grapes\xmlenc\xmlenc\jars\xmlenc-0.52.jar
+C:\Users\shariqparwez\.groovy\grapes\msv\isorelax\jars\isorelax-20030807.jar
+C:\Users\shariqparwez\.groovy\grapes\junit\junit\jars\junit-3.8.1.jar
+
+==============================================================
+
