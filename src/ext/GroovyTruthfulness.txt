@@ -1,0 +1,23 @@
+groovy:000> assert 1 == 2
+ERROR org.codehaus.groovy.runtime.powerassert.PowerAssertionError:
+assert 1 == 2
+         |
+         false
+
+groovy:000> assert 1 == 1
+===> null
+
+groovy:000> assert null == false
+ERROR org.codehaus.groovy.runtime.powerassert.PowerAssertionError:
+assert null == false
+            |
+            false
+
+groovy:000> assert !null == false
+ERROR org.codehaus.groovy.runtime.powerassert.PowerAssertionError:
+assert !null == false
+       |     |
+       true  false
+
+groovy:000> assert !!null == false
+===> null
