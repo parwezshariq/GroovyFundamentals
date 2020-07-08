@@ -16,7 +16,7 @@ class DateParserTests extends GroovyTestCase {
 		def dateTime = new DateTime(2013,1,1,9,30)
 		def result = parser.parse(dateTime.toString())
 
-		assert '01/01/2013 - 09:30 AM' == result
+		assert '01/01/2013 - 09:30 AMcat' == result
 	}
 
 	def void testWillThrowAnErrorWhenNullDateTimeIsProvided() {

@@ -11,7 +11,7 @@ class DateParser {
 
 		use(DateTimeCategory) {
 			def printableTime = new DateTime(time)
-			return printableTime.createPrintableTime('cat')
+			printableTime.createPrintableTime('cat')
 		}
 		
 	}
