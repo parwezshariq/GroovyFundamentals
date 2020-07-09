@@ -23,10 +23,25 @@ gpx.with {
 	println attributes()['creator']
 }
 
+def forecastApi = new RESTClient('https://api.forecast.io/')
+
+// This is api key to connect with the forecast api
+def apiKey = 'apiKey'
+
 gpx.rte.rtept.each {
     println it.@lat
     println it.@lon
 
     def parser = new DateParser()
     println parser.parse(it.time.toString())
+
+    def queryString = "forecast/$apiKey/${it.@lat},${it.@lon},${it.time}"
+    def response = forecastApi.get(path: queryString)
+    
+    println response.status
+    println response.data
+
+    println "${response.data.currently.summary}"
+    println "${response.data.currently.temperature} degrees"
+
 }
