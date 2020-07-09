@@ -1,0 +1,13 @@
+$ mysql -uroot -proot
+
+mysql> create schema gps;
+
+mysql> show schemas like 'gps';
+
+mysql> use gps;
+
+mysql> create table routepoints(latitude double, longitude double, timestep datetime, temperature double);
+
+mysql> show tables;
+
+mysql> describe routepoints;
